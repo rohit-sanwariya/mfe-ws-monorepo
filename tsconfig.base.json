@@ -16,7 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "login/Module": ["apps/login/src/app/remote-entry/entry.module.ts"],
-      "team/Module": ["app/mfe/team/src/app/remote-entry/entry.module.ts"]
+      "team/Module": ["apps/mfe/team/src/app/remote-entry/entry.module.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

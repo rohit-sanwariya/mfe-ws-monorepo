@@ -3,29 +3,29 @@
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "app/mfe/team/src",
+  "sourceRoot": "apps/mfe/team/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@nx/angular:webpack-browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/app/mfe/team",
-        "index": "app/mfe/team/src/index.html",
-        "main": "app/mfe/team/src/main.ts",
+        "outputPath": "dist/apps/mfe/team",
+        "index": "apps/mfe/team/src/index.html",
+        "main": "apps/mfe/team/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "app/mfe/team/tsconfig.app.json",
+        "tsConfig": "apps/mfe/team/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
           {
             "glob": "**/*",
-            "input": "app/mfe/team/public"
+            "input": "apps/mfe/team/public"
           }
         ],
-        "styles": ["app/mfe/team/src/styles.scss"],
+        "styles": ["apps/mfe/team/src/styles.scss"],
         "scripts": [],
         "customWebpackConfig": {
-          "path": "app/mfe/team/webpack.config.ts"
+          "path": "apps/mfe/team/webpack.config.ts"
         }
       },
       "configurations": {
@@ -44,7 +44,7 @@
           ],
           "outputHashing": "all",
           "customWebpackConfig": {
-            "path": "app/mfe/team/webpack.prod.config.ts"
+            "path": "apps/mfe/team/webpack.prod.config.ts"
           }
         },
         "development": {
